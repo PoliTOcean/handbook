@@ -1,0 +1,68 @@
+site_name: PoliTOcean Handbook
+site_description: Team handbook & internal documentation for PoliTOcean
+site_url: https://politocean.github.io/handbook/
+repo_url: https://github.com/PoliTOcean/handbook
+repo_name: PoliTOcean/handbook
+copyright: Made with 💙 by PoliTOcean — Politecnico di Torino
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Onboarding: onboarding.md
+  - Organization & Divisions: organization.md
+  - Processes & Conventions: processes.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://politocean.polito.it
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/team-politocean/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/politocean/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@politocean
